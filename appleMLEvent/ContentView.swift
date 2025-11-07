@@ -6,33 +6,27 @@
 //
 
 import SwiftUI
-import SwiftData
 import AVFoundation
 import Speech
 
-
-class SynthDelegate: NSObject, AVSpeechSynthesizerDelegate {
-    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        print("Finished speaking")
-    }
-}
-
 struct TextToSpeechView: View {
-    let synthesizer = AVSpeechSynthesizer() // PUT THIS OUTSIDE
+    let synthesizer = AVSpeechSynthesizer()
     var body: some View {
-        Button("Synthesise") {
+        Button("Speak") {
             let utterance = AVSpeechUtterance(string: "Hello, World!")
             
             utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
             synthesizer.speak(utterance)
-            print("Started Speaking")
         }
     }
 }
 
 struct SpeechToTextView: View {
     let audioEngine = AVAudioEngine()
-    let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
+    let speechRecognizer = SFSpeechRecognizer(locale: .current)
+    
+    @State var transcription = ""
+    
     var body: some View {
         Button("Recognise") {
             SFSpeechRecognizer.requestAuthorization {
