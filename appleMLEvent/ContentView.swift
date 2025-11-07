@@ -41,30 +41,6 @@ struct SpeechToTextView: View {
                 audioSession.beginConfiguration()
                 audioSession.sessionPreset = .high
                 
-                guard let mic = AVCaptureDevice.default(for: .audio),
-                      let micInput = try? AVCaptureDeviceInput(device: mic) else {
-                    print("No audio input available")
-                    return
-                }
-                if audioSession.canAddInput(micInput) {
-                    audioSession.addInput(micInput)
-                }
-                let audioOutput = AVCaptureAudioDataOutput()   // correct class
-                audioOutput.setSampleBufferDelegate(AudioDelegate(), queue: DispatchQueue(label: "AudioQueue"))
-                if audioSession.canAddOutput(audioOutput) {
-                    audioSession.addOutput(audioOutput)
-                }
-                let queue = DispatchQueue(label: "AudioQueue")
-                audioOutput.setSampleBufferDelegate(AudioDelegate(), queue: queue)
-                
-                if audioSession.canAddOutput(audioOutput) {
-                    audioSession.addOutput(audioOutput)
-                }
-                
-                audioSession.commitConfiguration()
-                audioSession.startRunning()
-                
-                print("Audio capture started (macOS equivalent of AVAudioSession.setActive(true))")
                 let request = SFSpeechAudioBufferRecognitionRequest()
                 request.shouldReportPartialResults = true
                 
@@ -80,11 +56,15 @@ struct SpeechToTextView: View {
                 
                 recognizer.recognitionTask(with: request) { result, _ in
                     if let result {
-                        print(result.bestTranscription.formattedString)
+                        transcription = result.bestTranscription.formattedString
                     }
                 }
             }
         }
+        Text(transcription)
+                .padding()
+                .frame(maxWidth: 750, alignment: .leading)
+                .border(Color.gray)
     }
 }
 
@@ -99,7 +79,7 @@ final class AudioDelegate: NSObject, AVCaptureAudioDataOutputSampleBufferDelegat
 
 #Preview {
     VStack(spacing: 20) {
-            Button("Recognise") {}
             Button("Synthesise") {}
+            Button("Recognise") {}
         }
 }

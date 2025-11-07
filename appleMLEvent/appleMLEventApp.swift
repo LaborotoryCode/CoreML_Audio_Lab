@@ -26,8 +26,8 @@ struct appleMLEventApp: App {
     var body: some Scene {
         WindowGroup {
             VStack {
-                        SpeechToTextView()
                         TextToSpeechView()
+                        SpeechToTextView()
             }
         }
         .modelContainer(sharedModelContainer)
