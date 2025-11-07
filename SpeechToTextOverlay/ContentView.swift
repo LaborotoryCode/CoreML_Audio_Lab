@@ -20,11 +20,9 @@ struct ContentView: View {
             Text(transcript)
                 .contentTransition(.numericText())
                 .font(.largeTitle)
-                .foregroundStyle(.black)
                 .padding()
-                .frame(maxWidth: transcript.isEmpty ? 0 : geometry.size.width * 0.6)
+                .frame(maxWidth: geometry.size.width * 0.6)
                 .glassEffect(.regular, in: RoundedRectangle(cornerSize: CGSize(width: 32, height: 32), style: .continuous))
-                .shadow(radius: 16)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
                 .padding(60)
         }
