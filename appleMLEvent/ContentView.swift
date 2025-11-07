@@ -112,6 +112,10 @@ struct ContentView: View {
                 }
             }
         }
+        Text(transcription)
+                .padding()
+                .frame(maxWidth: 750, alignment: .leading)
+                .border(Color.gray)
     }
 }
 
