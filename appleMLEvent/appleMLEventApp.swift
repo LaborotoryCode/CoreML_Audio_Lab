@@ -6,30 +6,28 @@
 //
 
 import SwiftUI
-import SwiftData
+import AppKit
+
+struct WindowAccessor: NSViewRepresentable {
+    var onResolve: (NSWindow) -> Void
+
+    func makeNSView(context: Context) -> NSView {
+        let view = NSView()
+        DispatchQueue.main.async { [weak view] in
+            if let win = view?.window {
+                onResolve(win)
+            }
+        }
+        return view
+    }
+    func updateNSView(_ nsView: NSView, context: Context) {}
+}
 
 @main
 struct appleMLEventApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
     var body: some Scene {
         WindowGroup {
-            VStack {
-                        SpeechToTextView()
-                        TextToSpeechView()
-            }
+            ContentView()
         }
-        .modelContainer(sharedModelContainer)
     }
 }
