@@ -1,8 +1,8 @@
 //
-//  appleMLEventApp.swift
-//  appleMLEvent
+//  WindowAccessor.swift
+//  SpeechToTextOverlay
 //
-//  Created by Ayaan Jain on 2/11/25.
+//  Created by Tristan Chay on 8/11/25.
 //
 
 import SwiftUI
@@ -21,13 +21,4 @@ struct WindowAccessor: NSViewRepresentable {
         return view
     }
     func updateNSView(_ nsView: NSView, context: Context) {}
-}
-
-@main
-struct appleMLEventApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
 }

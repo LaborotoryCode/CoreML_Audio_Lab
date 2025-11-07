@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		D37B5FFC2EB73066002D91D7 /* appleMLEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appleMLEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB4467D2EBE5BCB00FA2A86 /* SpeechToTextOverlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechToTextOverlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		D37B5FFE2EB73066002D91D7 /* appleMLEvent */ = {
+		1DB4467F2EBE5BCB00FA2A86 /* SpeechToTextOverlay */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = appleMLEvent;
+			path = SpeechToTextOverlay;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D37B5FF92EB73066002D91D7 /* Frameworks */ = {
+		1DB4467A2EBE5BCB00FA2A86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D37B5FF32EB73066002D91D7 = {
+		1DB446742EBE5BCB00FA2A86 = {
 			isa = PBXGroup;
 			children = (
-				D37B5FFE2EB73066002D91D7 /* appleMLEvent */,
-				D37B5FFD2EB73066002D91D7 /* Products */,
+				1DB4467F2EBE5BCB00FA2A86 /* SpeechToTextOverlay */,
+				1DB4467E2EBE5BCB00FA2A86 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D37B5FFD2EB73066002D91D7 /* Products */ = {
+		1DB4467E2EBE5BCB00FA2A86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D37B5FFC2EB73066002D91D7 /* appleMLEvent.app */,
+				1DB4467D2EBE5BCB00FA2A86 /* SpeechToTextOverlay.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D37B5FFB2EB73066002D91D7 /* appleMLEvent */ = {
+		1DB4467C2EBE5BCB00FA2A86 /* SpeechToTextOverlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D37B600A2EB73069002D91D7 /* Build configuration list for PBXNativeTarget "appleMLEvent" */;
+			buildConfigurationList = 1DB446882EBE5BCD00FA2A86 /* Build configuration list for PBXNativeTarget "SpeechToTextOverlay" */;
 			buildPhases = (
-				D37B5FF82EB73066002D91D7 /* Sources */,
-				D37B5FF92EB73066002D91D7 /* Frameworks */,
-				D37B5FFA2EB73066002D91D7 /* Resources */,
+				1DB446792EBE5BCB00FA2A86 /* Sources */,
+				1DB4467A2EBE5BCB00FA2A86 /* Frameworks */,
+				1DB4467B2EBE5BCB00FA2A86 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				D37B5FFE2EB73066002D91D7 /* appleMLEvent */,
+				1DB4467F2EBE5BCB00FA2A86 /* SpeechToTextOverlay */,
 			);
-			name = appleMLEvent;
+			name = SpeechToTextOverlay;
 			packageProductDependencies = (
 			);
-			productName = appleMLEvent;
-			productReference = D37B5FFC2EB73066002D91D7 /* appleMLEvent.app */;
+			productName = SpeechToTextOverlay;
+			productReference = 1DB4467D2EBE5BCB00FA2A86 /* SpeechToTextOverlay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D37B5FF42EB73066002D91D7 /* Project object */ = {
+		1DB446752EBE5BCB00FA2A86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
-					D37B5FFB2EB73066002D91D7 = {
-						CreatedOnToolsVersion = 16.4;
+					1DB4467C2EBE5BCB00FA2A86 = {
+						CreatedOnToolsVersion = 26.0;
 					};
 				};
 			};
-			buildConfigurationList = D37B5FF72EB73066002D91D7 /* Build configuration list for PBXProject "appleMLEvent" */;
+			buildConfigurationList = 1DB446782EBE5BCB00FA2A86 /* Build configuration list for PBXProject "SpeechToTextOverlay" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D37B5FF32EB73066002D91D7;
+			mainGroup = 1DB446742EBE5BCB00FA2A86;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = D37B5FFD2EB73066002D91D7 /* Products */;
+			productRefGroup = 1DB4467E2EBE5BCB00FA2A86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D37B5FFB2EB73066002D91D7 /* appleMLEvent */,
+				1DB4467C2EBE5BCB00FA2A86 /* SpeechToTextOverlay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D37B5FFA2EB73066002D91D7 /* Resources */ = {
+		1DB4467B2EBE5BCB00FA2A86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D37B5FF82EB73066002D91D7 /* Sources */ = {
+		1DB446792EBE5BCB00FA2A86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		D37B60082EB73069002D91D7 /* Debug */ = {
+		1DB446862EBE5BCD00FA2A86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -160,7 +160,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				DEVELOPMENT_TEAM = XL5JK4F896;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -179,7 +179,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -189,7 +189,7 @@
 			};
 			name = Debug;
 		};
-		D37B60092EB73069002D91D7 /* Release */ = {
+		1DB446872EBE5BCD00FA2A86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -224,7 +224,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				DEVELOPMENT_TEAM = XL5JK4F896;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -237,7 +237,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -245,64 +245,90 @@
 			};
 			name = Release;
 		};
-		D37B600B2EB73069002D91D7 /* Debug */ = {
+		1DB446892EBE5BCD00FA2A86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = appleMLEvent/appleMLEvent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				DEVELOPMENT_TEAM = XL5JK4F896;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"We need this\"";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "\"We need to recognize your speech\"";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SpeechToTextOverlay requires access to the microphone to capture your voice.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SpeechToTextOverlay requires access to the speech recognition to transcribe your speech to text.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ayaan.appleMLEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.swiftin.SpeechToTextOverlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		D37B600C2EB73069002D91D7 /* Release */ = {
+		1DB4468A2EBE5BCD00FA2A86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = appleMLEvent/appleMLEvent.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7K6ZTDFM48;
+				DEVELOPMENT_TEAM = XL5JK4F896;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "\"We need this\"";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "\"We need to recognize your speech\"";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SpeechToTextOverlay requires access to the microphone to capture your voice.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SpeechToTextOverlay requires access to the speech recognition to transcribe your speech to text.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Ayaan.appleMLEvent;
+				PRODUCT_BUNDLE_IDENTIFIER = sg.swiftin.SpeechToTextOverlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -310,25 +336,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D37B5FF72EB73066002D91D7 /* Build configuration list for PBXProject "appleMLEvent" */ = {
+		1DB446782EBE5BCB00FA2A86 /* Build configuration list for PBXProject "SpeechToTextOverlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D37B60082EB73069002D91D7 /* Debug */,
-				D37B60092EB73069002D91D7 /* Release */,
+				1DB446862EBE5BCD00FA2A86 /* Debug */,
+				1DB446872EBE5BCD00FA2A86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D37B600A2EB73069002D91D7 /* Build configuration list for PBXNativeTarget "appleMLEvent" */ = {
+		1DB446882EBE5BCD00FA2A86 /* Build configuration list for PBXNativeTarget "SpeechToTextOverlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D37B600B2EB73069002D91D7 /* Debug */,
-				D37B600C2EB73069002D91D7 /* Release */,
+				1DB446892EBE5BCD00FA2A86 /* Debug */,
+				1DB4468A2EBE5BCD00FA2A86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D37B5FF42EB73066002D91D7 /* Project object */;
+	rootObject = 1DB446752EBE5BCB00FA2A86 /* Project object */;
 }
