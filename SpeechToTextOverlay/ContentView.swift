@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SpeechToTextOverlay
 //
-//  Created by Tristan Chay on 8/11/25.
+//  Created by Ayaan Jain on 6/11/25.
 //
 
 import SwiftUI
@@ -21,8 +21,9 @@ struct ContentView: View {
                 .contentTransition(.numericText())
                 .font(.largeTitle)
                 .padding()
-                .frame(maxWidth: geometry.size.width * 0.6)
-                .glassEffect(.regular, in: RoundedRectangle(cornerSize: CGSize(width: 32, height: 32), style: .continuous))
+                .frame(maxWidth: geometry.size.width * 0.6, maxHeight: 50)
+                .background()
+                .truncationMode(.head)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
                 .padding(60)
         }
@@ -60,33 +61,6 @@ struct ContentView: View {
                 guard micGranted else { return }
                 guard let recognizer = speechRecognizer, recognizer.isAvailable else { return }
 
-                let audioSession = AVCaptureSession()
-                audioSession.beginConfiguration()
-                audioSession.sessionPreset = .high
-
-                guard let mic = AVCaptureDevice.default(for: .audio),
-                      let micInput = try? AVCaptureDeviceInput(device: mic) else {
-                    print("No audio input available")
-                    return
-                }
-                if audioSession.canAddInput(micInput) {
-                    audioSession.addInput(micInput)
-                }
-                let audioOutput = AVCaptureAudioDataOutput()
-                audioOutput.setSampleBufferDelegate(AudioDelegate(), queue: DispatchQueue(label: "AudioQueue"))
-                if audioSession.canAddOutput(audioOutput) {
-                    audioSession.addOutput(audioOutput)
-                }
-                let queue = DispatchQueue(label: "AudioQueue")
-                audioOutput.setSampleBufferDelegate(AudioDelegate(), queue: queue)
-
-                if audioSession.canAddOutput(audioOutput) {
-                    audioSession.addOutput(audioOutput)
-                }
-
-                audioSession.commitConfiguration()
-                audioSession.startRunning()
-
                 let request = SFSpeechAudioBufferRecognitionRequest()
                 request.shouldReportPartialResults = true
 
@@ -103,8 +77,11 @@ struct ContentView: View {
 
                 recognizer.recognitionTask(with: request) { result, _ in
                     if let result {
-                        withAnimation {
-                            transcript = result.bestTranscription.formattedString
+                        DispatchQueue.main.async {
+                                transcript = result.bestTranscription.formattedString
+                                withAnimation {
+                                    print(result.bestTranscription.formattedString)
+                                }
                         }
                     }
                 }
